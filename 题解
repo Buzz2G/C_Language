@@ -105,9 +105,13 @@ retract的意思是返回上一步，不是直接加减！！！！！！！！
 # 9_funsum.c
 这道题秒的出，但是感觉bonus拿不到，pointer funtion不会用
 
-#  9: dash.c
+# h9_dash.c
 如果不拿bonus的话还蛮好拿分的。算了先把题目刷完吧
-# 10:_jewels.c
+
+# 10_jewels.c
+碰见难题暴力就完事了，别忘了 abs(int) 是绝对值！！！！！
+
+
 
 
 # 13_subnet.c
