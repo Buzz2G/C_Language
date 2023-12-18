@@ -116,6 +116,25 @@ retract的意思是返回上一步，不是直接加减！！！！！！！！
 而且用fgets(arr[i],100,stdin)要这样写，麻烦死了，最左边是存的地方，中间是大小，右边的读取的文件指针。晕都会晕死
 如果不是逼不得已，还是getchar稳重一些
 
+# 11_revstr.c
+这道题要写的东西还是蛮多的。首先是宏函数，还有是字符串的替换，还有就是fgets的细节的用法
+宏函数我是觉得不太想学了，因为确实不太稳，还是习惯一下吧
+#define SWAPCHAR(a, b) do { char *temp = (a); (a) = (b); (b) = temp; } while(0)
+这是char的替换位置的操作，到时候考试把这个打进去就算了
+
+char* revstr(char *s)
+{
+    int len = strlen(s);
+    int top = 0, end = len - 1;
+    while (top < end)
+    {
+        SWAPCHAR(s[top], s[end]);
+        top++;
+        end--;
+    }
+    return s;
+}
+这是字符串转置的操作代码
 
 
 
